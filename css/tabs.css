@@ -1,0 +1,44 @@
+/* Tabs CSS */
+
+.accordian-section {
+    margin-top : 20px;
+    position:relative;
+    text-align: center;
+}
+
+
+.accordian-item {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    margin: 0 10px 10px auto;
+    text-align:center;
+    font-size: 18px;
+    line-height:150px;
+    vertical-align: middle;
+}
+
+.accordian-item span {
+    display: inline-block;
+    width: 100%;
+    padding: 0 10px;
+    vertical-align: middle;
+    line-height: 1.2;
+}
+
+.accordian-content {
+    display: none;
+    position: absolute;
+    background: #0f0f0f;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.accordian-content p {
+    margin: 0 auto ;
+    padding: 20px 0;
+}

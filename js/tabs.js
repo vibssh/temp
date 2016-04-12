@@ -1,11 +1,11 @@
 /**
- * Created by LJacobs on 4/11/2016.
+ * Created by LJacobs on 4/12/2016.
  */
-
 
 $(function () {
     var $items = $('.accordian-item'),
         $contents = $(".accordian-content");
+    $('.accordian-content:first').show();
     //click event
     $items.on("click", function () {
         var $clickedItem = $(this);
@@ -13,10 +13,10 @@ $(function () {
         var content = $(".accordian-content[data-id='" +id + "']");
 
         if (content.is(":visible")) {
-            content.slideUp();
+            content.fadeOut();
         } else {
-            $contents.slideUp().promise().done(function () {
-                content.slideDown();
+            $contents.fadeOut().promise().done(function () {
+                content.fadeIn();
             });
         }
     });
